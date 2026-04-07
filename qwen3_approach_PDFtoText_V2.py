@@ -14,6 +14,7 @@ from PIL import Image
 # ==============================
 # KONFIGURATION
 # ==============================
+BASE_DIR = Path(__file__).parent.resolve()
 
 PDF_PATH = BASE_DIR / "input"
 OUTPUT_DIR = BASE_DIR / "output"
