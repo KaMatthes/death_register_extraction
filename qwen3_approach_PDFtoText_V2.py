@@ -30,6 +30,18 @@ MAX_RETRIES = 5
 BATCH_SIZE = 5
 BATCH_PAUSE = 60
 
+print("=== DEBUG START ===")
+print(f"BASE_DIR: {BASE_DIR}")
+print(f"PDF_PATH: {PDF_PATH}")
+print(f"Existiert PDF_PATH? {PDF_PATH.exists()}")
+
+try:
+    print(f"Inhalt von PDF_PATH: {list(PDF_PATH.glob('*'))}")
+except Exception as e:
+    print(f"Fehler beim Lesen von PDF_PATH: {e}")
+
+print("=== DEBUG ENDE ===")
+
 # ==============================
 # PDF → PNG
 # ==============================
