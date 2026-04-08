@@ -11,6 +11,8 @@ import re
 import time
 from PIL import Image
 
+print("SCRIPT STARTET")
+
 # ==============================
 # KONFIGURATION
 # ==============================
@@ -207,6 +209,7 @@ def create_page_xml(sections, output_path):
 # ==============================
 
 def main():
+    print("MAIN WIRD AUSGEFÜHRT")
     pdf_files = list(PDF_PATH.glob("*.pdf"))
     if not pdf_files:
         print("Keine PDFs im Input-Ordner gefunden.")
